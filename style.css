@@ -10,3 +10,38 @@ Tags: rantsite
 License: Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0
 License URI: http://creativecommons.org/licenses/by-nc-nd/3.0/
 */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	background: #F5F5F5;
+}
+
+.clear {
+	clear: both;
+}
+
+#page {
+	width: 960px;
+	margin:0 auto;
+}
+
+#logo {
+	float: left;
+}
+
+#left, #leftHead {
+	float: left;
+	width:630px;
+	background:#CCCCCC;
+}
+
+#right, #rightHead {
+	float: left;
+	margin-left: 30px;
+	width: 300px;
+	background: #DDDDDD;
+}
