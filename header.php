@@ -31,4 +31,5 @@
 				Twitter / FB / Flattr / RSS
 			</div>
 		</div>
+		<div class="clear"></div>
 	</div>
