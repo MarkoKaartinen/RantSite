@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 		<div id="left">
-			asd
+			<div id="slider">
+				
+			</div>
 		</div>
 <?php get_footer(); ?>
