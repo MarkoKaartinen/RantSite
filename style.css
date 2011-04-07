@@ -9,6 +9,11 @@ Tags: rantsite
 
 License: Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)
 License URI: http://creativecommons.org/licenses/by-nc-nd/3.0/
+
+Värikoodeja muistiin:
+Navi hover bg #3883d7
+#c95050
+#67c950
 */
 
 * {
@@ -32,7 +37,6 @@ body {
 }
 
 #logo {
-	float: left;
 }
 
 #logo h1 {
@@ -51,24 +55,40 @@ body {
 }
 
 #navigationTop {
-	float: right;
 }
 
-#navi {
+#navigationTop ul {
 	list-style: none;
-	margin-top:15px;
+	margin-top:0;
 }
 
-#navi li {
+#navigationTop ul li {
 	float: left;
-	margin-left: 10px;
+	margin-right: 10px;
 }
 
-#navi li a {
+#navigationTop ul li a {
 	display: block;
 	padding:5px 10px;
 	color: #FFFFFF;
 	background: #000000;
-	font-size: 13px;
+	font-size: 14px;
 	text-decoration: none;
+	
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	
+	-webkit-transition: 0.3s ease-in;
+	-moz-transition: 0.3s ease-in;
+	-o-transition: 0.3s ease-in;
+
+}
+
+#navigationTop ul li a:hover {
+	background: #3883d7;
+}
+
+#page {
+	margin-top: 20px;
 }

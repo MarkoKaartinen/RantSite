@@ -2,11 +2,16 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<title>RantSite.net</title>
+	<title><?php wp_title('&raquo;','true','right'); ?><?php if ( is_single() ) { ?> Arkisto &raquo; <?php } ?><?php bloginfo('name'); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<?php wp_enqueue_script("jquery"); ?>
+
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]--> 
+	
 	<?php wp_head(); ?>
 </head>
 <body>
@@ -14,16 +19,11 @@
 	<div id="header">
 		<div id="leftHead">
 			<div id="logo">
-				<h1>RantSite.net</h1>
+				<h1><?php bloginfo('name'); ?></h1>
 			</div>
+			<div class="clear"></div>
 			<div id="navigationTop">
-				<ul id="navi">
-					<li><a href="#">Etusivu</a></li>
-					<li><a href="#">Räntit</a></li>
-					<li><a href="#">Arkisto</a></li>
-					<li><a href="#">Info</a></li>
-					<li><a href="#">Hakemus</a></li>
-				</ul>
+				<?php wp_nav_menu(array('menu' => 'custom_menu')); ?>
 			</div>
 		</div>
 		<div id="rightHead">
@@ -32,4 +32,7 @@
 			</div>
 		</div>
 		<div class="clear"></div>
+	</div>
+	<div id="page">
+	<div id="slider">
 	</div>

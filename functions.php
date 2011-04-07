@@ -1,4 +1,11 @@
 <?php
+add_theme_support( 'post-thumbnails', array( 'post' ) );
+
+if (function_exists('register_nav_menu')) {
+	register_nav_menu('custom_menu', __('Custom Menu'));
+}
+
+
 if ( function_exists('register_sidebar') ){
 	register_sidebar(array(
 		'name' => 'Widget 1',
