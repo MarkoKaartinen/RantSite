@@ -95,7 +95,7 @@ body {
 	-webkit-transition: 0.3s ease-in;
 	-moz-transition: 0.3s ease-in;
 	-o-transition: 0.3s ease-in;
-
+	transition: 0.3s ease-in;
 }
 
 #navigationTop ul li a:hover {
