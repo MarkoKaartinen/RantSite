@@ -62,9 +62,42 @@ body {
 }
 
 #rightHead #medialinks {
-	text-align: center;
+	text-align: left;
 	background: #FFFFFF;
 	padding: 15px;
+}
+
+#feedburner {
+	width: 60px;
+	float: left;
+	margin-right: 3px;
+	margin-left: 10px;
+}
+
+#feedburner .feedbox {
+	font-weight: bold;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	border: 1px solid #c95050;
+	text-align: center;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+
+}
+
+#feedburner .followfeed {
+	text-align: center;
+	display: block;
+	color: #000000;
+	text-decoration: none;
+	border: 1px solid #c95050;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	margin-top:6px;
+	padding:2px 0;
+	font-size: 12px;
 }
 
 #navigationTop {
