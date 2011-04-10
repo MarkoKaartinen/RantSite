@@ -1,5 +1,5 @@
 /*
-Theme Name: RantSite 0.1
+Theme Name: RantSite
 Theme URI: http://rantsite.net/
 Description: Theme for RantSite.net.
 Author: Marko Kaartinen / RantSite.net
@@ -23,8 +23,9 @@ Navi hover bg #3883d7
 
 body {
 	margin:30px 0;
-	background: #F5F5F5;
+	background: #EDEDED;
 	font-family: Arial;
+	font-size: 14px;
 }
 
 .clear {
@@ -51,13 +52,19 @@ body {
 
 #left, #leftHead {
 	float: left;
-	width:730px;
+	width:650px;
 }
 
 #right, #rightHead {
 	float: left;
 	margin-left: 30px;
-	width: 200px;
+	width: 280px;
+}
+
+#rightHead #medialinks {
+	text-align: center;
+	background: #FFFFFF;
+	padding: 15px;
 }
 
 #navigationTop {
@@ -102,4 +109,71 @@ body {
 #slider {
 	background: #FFFFFF;
 	padding:15px;
+}
+
+#sidebar .sideblock {
+	background: #FFFFFF;
+	margin-bottom: 20px;
+	padding:15px;
+}
+
+#sidebar .sidetitle {
+	font-family: "Cabin", Arial;
+	background: #E9E9E9;
+	padding:5px 10px;
+	font-size: 22px;
+}
+
+#sidebar .sideblock ul {
+	list-style: none;
+}
+
+#sidebar .sideblock a {
+	border-bottom:1px dotted #cccccc;
+	display: block;
+	text-transform:capitalize;
+	color: #000000;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+#sidebar .sideblock a:hover {
+	background: #f7f7f7;
+	font-weight: bold;
+}
+
+#sidebar .sideblock ul li a {
+	padding:5px 10px;
+}
+
+#sidebar .sideblock ul li ul li a {
+	padding:5px 20px;
+}
+
+#sidebar .sideblock ul li ul li ul li a {
+	padding:5px 30px;
+}
+
+#sidebar #searchform {
+	margin-top:10px;
+}
+
+#sidebar #searchform label {
+	display: none;
+}
+
+#sidebar #searchform input {
+	background: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	padding:5px;
+	font-size: 16px;
+}
+
+#sidebar #searchform #s {
+	width: 190px;
+}
+
+#sidebar #searchform #searchsubmit {
+	float: right;
+	cursor: pointer;
 }
