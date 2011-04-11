@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 	<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Ubuntu|Cabin" rel="stylesheet" type="text/css" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS" href="http://feeds.feedburner.com/RantSite" /> 
 	<?php wp_enqueue_script("jquery"); ?>
 	
 	<!--[if IE]>

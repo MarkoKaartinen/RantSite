@@ -218,3 +218,8 @@ body {
 	float: right;
 	cursor: pointer;
 }
+
+.entry {
+	background: #FFFFFF;
+	padding:15px;
+}

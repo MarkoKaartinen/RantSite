@@ -17,8 +17,10 @@
 	<?php
 	$format = get_post_format();
 	if ( false === $format ) {$format = 'standard'; }	?>
-
 	<div class="entry format-<?php echo $format; ?>">
+		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+		</div>
 	</div>
 
 <?php endwhile; // End the loop. Whew. ?>
