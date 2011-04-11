@@ -50,6 +50,13 @@ body {
 	color: #000000;
 }
 
+#content {
+}
+
+#container {
+	margin-top: 20px;
+}
+
 #left, #leftHead {
 	float: left;
 	width:650px;
@@ -78,26 +85,30 @@ body {
 	font-weight: bold;
 	padding-top: 9px;
 	padding-bottom: 9px;
-	border: 1px solid #c95050;
+	border: 1px solid #ff8844;
 	text-align: center;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 	border-radius:5px;
-
+	-moz-box-shadow: inset 0 0 5px 5px #ffe2cc;
+	-webkit-box-shadow: inset 0 0 5px 5px #ffe2cc;
+	box-shadow: inset 0 0 5px 5px #ffe2cc;
 }
 
 #feedburner .followfeed {
 	text-align: center;
 	display: block;
 	color: #000000;
+	font-weight: bold;
 	text-decoration: none;
-	border: 1px solid #c95050;
+	border: 1px solid #ff8844;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 	border-radius:5px;
 	margin-top:6px;
 	padding:2px 0;
 	font-size: 12px;
+	background: #ffe2cc;
 }
 
 #navigationTop {
@@ -135,13 +146,10 @@ body {
 	background: #3883d7;
 }
 
-#page {
-	margin-top: 20px;
-}
-
 #slider {
 	background: #FFFFFF;
 	padding:15px;
+	margin-bottom: 20px;
 }
 
 #sidebar .sideblock {

@@ -8,7 +8,7 @@
 	<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Ubuntu|Cabin" rel="stylesheet" type="text/css" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<?php wp_enqueue_script("jquery"); ?>
-
+	
 	<!--[if IE]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]--> 
@@ -26,6 +26,8 @@
 	</script>
 	
 	<?php wp_head(); ?>
+	
+	<script type="text/javascript" src="<?php bloginfo("template_url"); ?>/rantsite.js"></script>
 </head>
 <body>
 <div id="page">
@@ -43,7 +45,7 @@
 		<div id="rightHead">
 			<div id="medialinks">
 				<div id="some"></div>
-				<a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="rntst">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+				<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rantsite.net" data-text="RantSite.net - Eri bloggaajien kirjoittamia ränttejä!" data-count="vertical" data-via="rntst">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 				<a class="FlattrButton" style="display:none;" href="http://rantsite.net"></a>
 <noscript><a href="http://flattr.com/thing/161216/RantSite" target="_blank">
 <img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a></noscript>
@@ -62,4 +64,5 @@
 		</div>
 		<div class="clear"></div>
 	</div>
-	<div id="page">
+	<div class="clear"></div>
+	<div id="container">
