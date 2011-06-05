@@ -50,7 +50,7 @@
 				<a class="FlattrButton" style="display:none;" href="http://rantsite.net"></a>
 <noscript><a href="http://flattr.com/thing/161216/RantSite" target="_blank">
 <img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a></noscript>
-				<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Frantsite.net%2F&amp;layout=box_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;font&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:60px;" allowTransparency="true"></iframe>
+				<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Frantsite.net%2F&amp;layout=box_count&amp;show_faces=false&amp;width=65&amp;action=like&amp;font&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:65px; height:60px;" allowTransparency="true"></iframe>
 				<?php
 				$feed = "http://feeds.feedburner.com/RantSite";
 				$feedburner_xml = file_get_contents("http://feedburner.google.com/api/awareness/1.0/GetFeedData?uri=".$feed);

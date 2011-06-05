@@ -23,7 +23,7 @@ Navi hover bg #3883d7
 
 body {
 	margin:30px 0;
-	background: #EDEDED;
+	background: #ffffff;
 	font-family: Arial;
 	font-size: 14px;
 }
@@ -78,7 +78,7 @@ body {
 	width: 60px;
 	float: left;
 	margin-right: 3px;
-	margin-left: 10px;
+	margin-left: 0px;
 }
 
 #feedburner .feedbox {
@@ -152,9 +152,12 @@ body {
 	margin-bottom: 20px;
 }
 
+#sidebar {
+}
+
 #sidebar .sideblock {
 	background: #FFFFFF;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	padding:15px;
 }
 
@@ -163,6 +166,11 @@ body {
 	background: #E9E9E9;
 	padding:5px 10px;
 	font-size: 22px;
+	
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+
 }
 
 #sidebar .sideblock ul {
@@ -208,6 +216,15 @@ body {
 	border: 1px solid #CCCCCC;
 	padding:5px;
 	font-size: 16px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+#sidebar #searchform input:focus {
+	background: #f1f1f1;
+	text-decoration: none;
+	outline:none;
 }
 
 #sidebar #searchform #s {
@@ -221,5 +238,81 @@ body {
 
 .entry {
 	background: #FFFFFF;
-	padding:15px;
+	padding:0;
+	margin-bottom: 30px;
+}
+
+.entry .entry-title {
+	font-family: "Cabin", Arial;
+	padding:5px 0px;
+	font-size: 30px;
+	border-bottom: 1px dashed #cccccc;
+}
+
+.entry .entry-title a {
+	color:#3883d7;
+	text-decoration: none;
+	font-weight: normal;
+	-webkit-transition: 0.5s ease-in;
+	-moz-transition: 0.5s ease-in;
+	-o-transition: 0.5s ease-in;
+	transition: 0.5s ease-in;
+}
+
+.entry .entry-title a:hover {
+	color:#c95050;
+}
+
+.entry .entry-text {
+	padding: 10px 0px;
+	text-align:justify;
+}
+
+.entry .entry-text p {
+	font-family: Helvetica, Arial;
+	font-size: 14px;
+	line-height: 1.5em;
+	margin-bottom: 15px;
+	padding: 0px;
+}
+
+.entry .entry-text a {
+	color:#3883d7;
+	text-decoration: none;
+	font-weight: normal;
+	-webkit-transition: 0.5s ease-in;
+	-moz-transition: 0.5s ease-in;
+	-o-transition: 0.5s ease-in;
+	transition: 0.5s ease-in;
+	text-decoration: none;
+}
+
+.entry .entry-text a:hover {
+	color:#c95050;
+}
+
+.entry .entry-tags a {
+	float: left;
+	display: block;
+	padding:5px 10px;
+	color: #FFFFFF;
+	background: #E9E9E9;
+	font-size: 12px;
+	text-decoration: none;
+	margin-right: 5px;
+	color: #000000;
+	
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	
+	-webkit-transition: 0.3s ease-in;
+	-moz-transition: 0.3s ease-in;
+	-o-transition: 0.3s ease-in;
+	transition: 0.3s ease-in;
+}
+
+.entry .entry-tags a:hover {
+	background:#67c950;
+	color:#FFFFFF;
 }

@@ -20,6 +20,18 @@
 	<div class="entry format-<?php echo $format; ?>">
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+			<div class="entry-text">
+				<?php the_content("Lue lis&auml;&auml;..."); ?>
+				<div class="clear"></div>
+			</div>
+			<div class="entry-tags">
+				<?php 
+				if(has_tag()){
+					the_tags('', '', '');
+				} 
+				?>
+			</div>
+			<div class="clear"></div>
 		</div>
 	</div>
 
