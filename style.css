@@ -24,7 +24,7 @@ Navi hover bg #3883d7
 body {
 	margin:30px 0;
 	background: #ffffff;
-	font-family: Arial;
+	font-family: Helvetica, Arial;
 	font-size: 14px;
 }
 
@@ -315,4 +315,31 @@ body {
 .entry .entry-tags a:hover {
 	background:#67c950;
 	color:#FFFFFF;
+}
+
+.wp-pagenavi {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.wp-pagenavi .page, 
+.wp-pagenavi .pages, 
+.wp-pagenavi .nextpostslink, 
+.wp-pagenavi .current,
+.wp-pagenavi .extend, 
+.wp-pagenavi .first,
+.wp-pagenavi .previouspostslink,
+.wp-pagenavi .last {
+	background:#CCCCCC;
+	padding:5px 10px;
+	margin-right: 5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.wp-pagenavi .current {
+	background:#67c950;
 }

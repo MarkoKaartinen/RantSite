@@ -34,5 +34,15 @@
 			<div class="clear"></div>
 		</div>
 	</div>
+	<div class="clear"></div>
+
+    <?php comments_template( '', true ); ?>
+
+	<div class="clear"></div>
 
 <?php endwhile; // End the loop. Whew. ?>
+
+<?php if (  $wp_query->max_num_pages > 1 ) : ?>
+	<?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
+	<div class="clear"></div>
+<?php endif; ?>
