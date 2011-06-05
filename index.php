@@ -6,7 +6,13 @@
 			</div>-->
 			<?php } ?>
 			<div id="content">
-				<?php get_template_part( 'loop', 'index' ); ?>
+				<?php 
+				if(is_front_page()){
+					get_template_part( 'etusivu', 'index' ); 
+				}else{
+					get_template_part( 'loop', 'index' ); 
+				}
+				?>
 			</div>
 		</div>
 <?php get_footer(); ?>

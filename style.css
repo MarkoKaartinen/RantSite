@@ -4,7 +4,7 @@ Theme URI: http://rantsite.net/
 Description: Theme for RantSite.net.
 Author: Marko Kaartinen / RantSite.net
 Author URI: http://markokaartinen.info/
-Version: 0.1
+Version: 0.7
 Tags: rantsite
 
 License: Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND 3.0)
@@ -166,6 +166,7 @@ body {
 	background: #E9E9E9;
 	padding:5px 10px;
 	font-size: 22px;
+	margin-bottom: 10px;
 	
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
@@ -244,9 +245,8 @@ body {
 
 .entry .entry-title {
 	font-family: "Cabin", Arial;
-	padding:5px 0px;
+	padding:0px;
 	font-size: 30px;
-	border-bottom: 1px dashed #cccccc;
 }
 
 .entry .entry-title a {
@@ -263,6 +263,11 @@ body {
 	color:#c95050;
 }
 
+.entry .entry-info {
+	border-bottom: 1px dashed #cccccc;
+	padding:0 0 3px 0;
+}
+
 .entry .entry-text {
 	padding: 10px 0px;
 	text-align:justify;
@@ -276,7 +281,21 @@ body {
 	padding: 0px;
 }
 
-.entry .entry-text a {
+.entry .entry-text li {
+	margin: 7px 0 8px 20px;
+}
+
+.entry .entry-text blockquote {
+	font-size: 14px;
+	font-style: italic;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	padding-left: 15px;
+	border-left: 3px solid #ccc;
+}
+
+.entry .entry-text a, .entry .entry-info a {
 	color:#3883d7;
 	text-decoration: none;
 	font-weight: normal;
@@ -287,7 +306,7 @@ body {
 	text-decoration: none;
 }
 
-.entry .entry-text a:hover {
+.entry .entry-text a:hover, .entry .entry-info a:hover {
 	color:#c95050;
 }
 
@@ -300,6 +319,7 @@ body {
 	font-size: 12px;
 	text-decoration: none;
 	margin-right: 5px;
+	margin-bottom:5px;
 	color: #000000;
 	
 	-moz-border-radius:10px;
@@ -315,6 +335,24 @@ body {
 .entry .entry-tags a:hover {
 	background:#67c950;
 	color:#FFFFFF;
+}
+
+.entry .entry-text img {
+	border: 2px solid #ddd;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px; /* optional rounded corners for browsers that support it */
+	padding: 3px;
+
+	-webkit-transition: 0.3s ease-in;
+	-moz-transition: 0.3s ease-in;
+	-o-transition: 0.3s ease-in;
+	transition: 0.3s ease-in;
+}
+
+.entry .entry-text img:hover {
+	border:2px solid #67c950;
 }
 
 .wp-pagenavi {
@@ -338,8 +376,90 @@ body {
 	border-radius:5px;
 	text-decoration: none;
 	color: #000000;
+	-webkit-transition: 0.3s ease-in;
+	-moz-transition: 0.3s ease-in;
+	-o-transition: 0.3s ease-in;
+	transition: 0.3s ease-in;
 }
 
 .wp-pagenavi .current {
 	background:#67c950;
+}
+
+.wp-pagenavi .page:hover, 
+.wp-pagenavi .pages:hover, 
+.wp-pagenavi .nextpostslink:hover, 
+.wp-pagenavi .current:hover,
+.wp-pagenavi .extend:hover, 
+.wp-pagenavi .first:hover,
+.wp-pagenavi .previouspostslink:hover,
+.wp-pagenavi .last:hover {
+	background: #c95050;
+}
+
+.entry .entry-text .wp-caption {
+	background-color: #f3f3f3;
+	border: 1px solid #ddd;
+	-khtml-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px; /* optional rounded corners for browsers that support it */
+	margin: 10px;
+	padding-top: 4px;
+	text-align: center;
+}
+
+.entry .entry-text .wp-caption img {
+	border: 0 none;
+	margin: 0;
+	padding: 4px 0 0 0;
+	background: none;
+}
+
+.entry .entry-text .wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	margin: 0;
+	padding: 0 4px 5px;
+}
+
+
+img.centered, .aligncenter, div.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.alignright, div.alignright {
+	padding: 0px;
+	margin: 0 0 2px 7px;
+	display: inline;
+}
+
+img.alignleft, div.alignleft {
+	padding: 0px;
+	margin: 0 7px 2px 0;
+	display: inline;
+}
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left
+}
+	
+.center {
+	text-align: center;
+}
+
+.wp-caption img {
+	border:none; !important
+	margin: 5px 5px 0;
+}
+
+.uppercase {
+	text-transform: capitalize;
 }
