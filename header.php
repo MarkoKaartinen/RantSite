@@ -14,6 +14,10 @@
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]--> 
 	
+	<script type="text/javascript" src="http://apis.google.com/js/plusone.js">
+		{lang: 'fi'}
+	</script>
+	
 	<script type="text/javascript">
 	/* <![CDATA[ */
     (function() {
