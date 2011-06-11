@@ -12,7 +12,7 @@ if($current_user->user_level == 10 OR $current_user->user_level == 1){
 }
 ?>
 
-<?php if(!is_front_page()){ ?>
+<?php if(!is_front_page() && !is_page()){ ?>
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Widget 2') ) : ?>
 <?php endif; ?>
 <?php } ?>

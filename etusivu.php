@@ -22,18 +22,28 @@
 
 				<div class="front-spacer"></div>
 				
-				<h1 class="entry-title"><a href="<?php echo home_url(); ?>/rantit/">Uusimmat r&auml;ntit</a></h1>
+				<h1 class="entry-title" style="padding-bottom:15px;"><a href="<?php echo home_url(); ?>/rantit/">Uusimmat r&auml;ntit</a></h1>
 				
 				<?php $numposts = $wpdb->get_results("SELECT * FROM $wpdb->posts WHERE post_status='publish' AND post_type='post' ORDER BY post_date DESC LIMIT 2"); ?>
 				<?php if(count($numposts) > 0){ ?>
 					<?php foreach ($numposts as $numpost) {
 						$link = get_permalink( $numpost->ID );
-						echo "<p><a style=\"font-size:20px; margin-top:10px;\" href=\"". $link ."\">".$numpost->post_title."</a> @ ".date("d.m.Y", strtotime($numpost->post_date))."</p>\n";
+						$kommentit = $numpost->comment_count;
+						if($kommentit == 0){
+							$kommenttitxt = "Ei kommentteja";
+						}elseif($kommentit == 1){
+							$kommenttitxt = $kommentit . " kommentti";
+						}else{
+							$kommenttitxt = $kommentit . " kommenttia";
+						}
+						echo "<p><a style=\"font-size:20px; margin-top:10px;\" href=\"". $link ."\">".$numpost->post_title."</a> @ ".date("d.m.Y", strtotime($numpost->post_date))." - <a href=\"$link#comments\">$kommenttitxt</a></p>\n";
 						$cont = $numpost->post_content;
 						$roina = nl2br($cont);
-						$roina2 = explode("<br />\n<br />", $roina);
+						$roina = str_replace("\n","",$roina);
+						$roina = str_replace("\r","",$roina);
+						$roina2 = explode("<br /><br />", $roina);
 						$roina = $roina2[0];
-						$roina2 = explode("<br />\n<p", $roina);
+						$roina2 = explode("<br /><p", $roina);
 						$roina = $roina2[0];
 						echo "<p>$roina</p>";
 						echo "<p><a href=\"". $link ."\">Lue koko r&auml;ntti &raquo;</a></p>\n";

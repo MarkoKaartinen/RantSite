@@ -181,10 +181,13 @@ body {
 #sidebar .sideblock a {
 	border-bottom:1px dotted #cccccc;
 	display: block;
-	text-transform:capitalize;
 	color: #000000;
 	text-decoration: none;
 	font-size: 14px;
+}
+
+#sidebar .sideblock a:first-letter {
+	text-transform:capitalize;
 }
 
 #sidebar .sideblock a:hover {
@@ -625,10 +628,23 @@ textarea {
 }
 
 #respond input[type=submit] {
-	background-color: #666666;
-	color: #FFFFFF;
+	background-color: #cccccc;
+	color: #000000;
 	cursor: pointer;
 	padding: 8px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+
+	-webkit-transition: 0.3s ease-in;
+	-moz-transition: 0.3s ease-in;
+	-o-transition: 0.3s ease-in;
+	transition: 0.3s ease-in;
+}
+
+#respond input[type=submit]:hover {
+	background:#67c950;
+	color:#FFFFFF;
 }
 
 #respond p {

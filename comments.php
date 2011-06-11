@@ -16,5 +16,7 @@
 		
 	<?php endif; // end have_comments() ?>
 	
+	<div class="front-spacer"></div>
+	
 	<?php comment_form(); ?>
 </div>

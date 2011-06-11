@@ -28,6 +28,7 @@
 			<div class="entry-text">
 				<?php the_content("Lue lis&auml;&auml;..."); ?>
 				<div class="clear"></div>
+				<!-- <?php if(function_exists('the_views')) { the_views(); } ?> -->
 				<div style="float:left;"><a href="http://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink(); ?>" data-text="<?php the_title(); ?>" data-count="horizontal" data-via="rntst">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
 				<div style="float:left;"><g:plusone size="medium" href="<?php the_permalink(); ?>"></g:plusone></div>
 				<div style="float:left; padding-top:2px; margin-right:15px;"><script type="text/javascript">reddit_url = "<?php the_permalink(); ?>";</script><script type="text/javascript" src="http://www.reddit.com/static/button/button1.js"></script></div>
@@ -46,6 +47,7 @@
 	</div>
 	<div class="clear"></div>
 
+<?php if(is_single()){ ?>
 <div style="text-align:center; margin-bottom:20px;">	
 <script type="text/javascript"><!--
 google_ad_client = "ca-pub-9507655949266974";
@@ -59,7 +61,7 @@ google_ad_height = 60;
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 </div>
-
+<?php } ?>
     <?php 
     if(comments_open()){
 		comments_template( '', true );
