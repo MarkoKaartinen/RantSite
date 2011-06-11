@@ -46,6 +46,20 @@
 	</div>
 	<div class="clear"></div>
 
+<div style="text-align:center; margin-bottom:20px;">	
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-9507655949266974";
+/* 468 x 60 rntst */
+google_ad_slot = "8061204180";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
     <?php 
     if(comments_open()){
 		comments_template( '', true );

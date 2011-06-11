@@ -20,13 +20,31 @@
 				<div style="float:left;"><div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=153934034630297&amp;xfbml=1"></script><fb:like href="<?php the_permalink(); ?>" send="false" layout="button_count" width="80" show_faces="false" font=""></fb:like></div>
 				<div class="clear"></div>
 
-			</div>
-			<div class="entry-tags">
-				<?php 
-				if(has_tag()){
-					the_tags('', '', '');
-				} 
-				?>
+				<div class="front-spacer"></div>
+				
+				<h1 class="entry-title"><a href="<?php echo home_url(); ?>/rantit/">Uusimmat r&auml;ntit</a></h1>
+				
+				<?php $numposts = $wpdb->get_results("SELECT * FROM $wpdb->posts WHERE post_status='publish' AND post_type='post' ORDER BY post_date DESC LIMIT 2"); ?>
+				<?php if(count($numposts) > 0){ ?>
+					<?php foreach ($numposts as $numpost) {
+						$link = get_permalink( $numpost->ID );
+						echo "<p><a style=\"font-size:20px; margin-top:10px;\" href=\"". $link ."\">".$numpost->post_title."</a> @ ".date("d.m.Y", strtotime($numpost->post_date))."</p>\n";
+						$cont = $numpost->post_content;
+						$roina = nl2br($cont);
+						$roina2 = explode("<br />\n<br />", $roina);
+						$roina = $roina2[0];
+						$roina2 = explode("<br />\n<p", $roina);
+						$roina = $roina2[0];
+						echo "<p>$roina</p>";
+						echo "<p><a href=\"". $link ."\">Lue koko r&auml;ntti &raquo;</a></p>\n";
+
+					} ?>
+				</ul>
+				<?php } ?>
+
+				<div class="front-spacer"></div>
+				
+				<?php wp_tag_cloud( array('number' => 100) ); ?>
 			</div>
 			<div class="clear"></div>
 		</div>
