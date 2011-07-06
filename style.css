@@ -728,3 +728,9 @@ h3#reply-title {
 .frontti * img {
 	display: none !important;
 }
+
+#mainos-etusivu-1 { text-align:center; }
+
+.etusivuroina a img {
+display:none;
+}

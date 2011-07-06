@@ -15,6 +15,15 @@ if ( function_exists('register_sidebar') ){
 		'before_title' => '<div class="sidetitle">',
 		'after_title' => '</div>',
 	));
+
+	register_sidebar(array(
+		'name' => 'Etusivu-1',
+		'id' => 'Etusivu-1',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
+	));
 	
 	register_sidebar(array(
 		'name' => 'Widget 2',

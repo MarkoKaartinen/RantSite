@@ -16,10 +16,19 @@
 				<div class="clear"></div>
 				<div style="float:left;"><a href="http://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink(); ?>" data-text="<?php the_title(); ?>" data-count="horizontal" data-via="rntst">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
 				<div style="float:left;"><g:plusone size="medium" href="<?php the_permalink(); ?>"></g:plusone></div>
-				<div style="float:left; padding-top:2px; margin-right:15px;"><script type="text/javascript">reddit_url = "<?php the_permalink(); ?>";</script><script type="text/javascript" src="http://www.reddit.com/static/button/button1.js"></script></div>
+				<div style="float:left; margin-right:10px;"><script type="text/javascript">reddit_url = "<?php the_permalink(); ?>";</script><script type="text/javascript" src="http://www.reddit.com/static/button/button1.js"></script></div>
 				<div style="float:left;"><div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=153934034630297&amp;xfbml=1"></script><fb:like href="<?php the_permalink(); ?>" send="false" layout="button_count" width="80" show_faces="false" font=""></fb:like></div>
 				<div class="clear"></div>
-
+				<div class="front-spacer"></div>
+				<div id="mainos-etusivu-1">
+<?php
+$mainos[0] = '<a href="http://reissuun.net"><img src="http://rantsite.net/ads/reissuun.png" alt="Reissuun.net" /></a>';
+$mainos[1] = '<a href="http://rantsite.net/hakemus"><img src="http://rantsite.net/ads/rantsite.png" alt="Rantsite.net" /></a>';
+$mainos[1] = '<a href="http://rantsite.net/ota-yhteytta"><img src="http://rantsite.net/ads/rantsite2.png" alt="Rantsite.net" /></a>';
+shuffle($mainos);
+echo $mainos[0];
+?>
+				</div>
 				<div class="front-spacer"></div>
 				
 				<h1 class="entry-title" style="padding-bottom:15px;"><a href="<?php echo home_url(); ?>/rantit/">Uusimmat r&auml;ntit</a></h1>
@@ -45,8 +54,9 @@
 						$roina = $roina2[0];
 						$roina2 = explode("<br /><p", $roina);
 						$roina = $roina2[0];
-						echo "<p>$roina</p>";
+						echo "<p class=\"etusivuroina\">$roina</p>";
 						echo "<p><a href=\"". $link ."\">Lue koko r&auml;ntti &raquo;</a></p>\n";
+						echo "<div class=\"clear\"></div>";
 
 					} ?>
 				</ul>

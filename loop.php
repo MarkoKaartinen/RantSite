@@ -31,7 +31,7 @@
 				<!-- <?php if(function_exists('the_views')) { the_views(); } ?> -->
 				<div style="float:left;"><a href="http://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink(); ?>" data-text="<?php the_title(); ?>" data-count="horizontal" data-via="rntst">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
 				<div style="float:left;"><g:plusone size="medium" href="<?php the_permalink(); ?>"></g:plusone></div>
-				<div style="float:left; padding-top:2px; margin-right:15px;"><script type="text/javascript">reddit_url = "<?php the_permalink(); ?>";</script><script type="text/javascript" src="http://www.reddit.com/static/button/button1.js"></script></div>
+				<div style="float:left; margin-right:10px;"><script type="text/javascript">reddit_url = "<?php the_permalink(); ?>";</script><script type="text/javascript" src="http://www.reddit.com/static/button/button1.js"></script></div>
 				<div style="float:left;"><div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=153934034630297&amp;xfbml=1"></script><fb:like href="<?php the_permalink(); ?>" send="false" layout="button_count" width="80" show_faces="false" font=""></fb:like></div>
 				<div class="clear"></div>
 			</div>
